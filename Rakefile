@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'rubygems'
 require 'bundler'
 begin
@@ -15,8 +16,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mongoid-cached-references"
   gem.homepage = "http://github.com/zgryw/mongoid-cached-references"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Cached relations for Mongoid.}
+  gem.description = %Q{}
   gem.email = "lukasz@sagol.pl"
   gem.authors = ["Łukasz Sągol"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
@@ -29,14 +30,14 @@ Jeweler::RubygemsDotOrgTasks.new
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'test/**/*_spec.rb'
   test.verbose = true
 end
 
 require 'rcov/rcovtask'
 Rcov::RcovTask.new do |test|
   test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'test/**/*_spec.rb'
   test.verbose = true
 end
 

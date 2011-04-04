@@ -1,0 +1,10 @@
+* cached_referenced_in :directory, :expire_on => [:title]
+  definiowanie po których polach powinien odświeżać cache
+
+* cached_referenced_in :directory, :delay_expire => true
+  wyrzucanie odświeżenia cache do DJ
+
+* cached_referenced_in :directory, :delay_expire => [:title]
+  wyrzucanie odświeżania cache do DJ, tylko dla danych pól
+
+* zwracanie cache w formie obiektu mockującego powiązany
